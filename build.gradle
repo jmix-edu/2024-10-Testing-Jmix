@@ -46,6 +46,12 @@ dependencies {
 
     testImplementation 'org.testcontainers:postgresql:1.17.6'
     testRuntimeOnly 'org.postgresql:postgresql:42.5.1'
+
+    testImplementation group: 'com.codeborne', name: 'selenide', version: '7.2.0'
+    implementation 'io.jmix.rest:jmix-rest-starter'
+    implementation 'io.jmix.authserver:jmix-authserver-starter'
+
+    testImplementation 'com.thoughtworks.gauge:gauge-java:0.10.3'
 }
 
 test {
