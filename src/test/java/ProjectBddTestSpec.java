@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.thoughtworks.gauge.Step;
 import org.openqa.selenium.By;
@@ -14,7 +15,7 @@ public class ProjectBddTestSpec {
 
     @Step("Open application in the browser")
     public void openApplicationUrl() {
-        open("http://localhost:8080/");
+        Selenide.open("http://localhost:8080/");
     }
 
     @Step("Log in as user with <username> username and <password> password")
